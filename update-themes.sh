@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WORKING_DIR=/root/aex/
+WORKING_DIR=/home/shubham/aex/
 
 function delete_useless () {
   declare -a array=($@)
@@ -76,7 +76,7 @@ declare -a res=('Android.mk' 'AndroidManifest.xml' 'MODULE_LICENSE_APACHE2' 'NOT
 
 declare -a values=('all_search_engines.xml' 'appmsg_colors.xml' 'arrays.xml' 'attrs_manifest.xml' 'bookmarks_icons.xml' 'bools.xml' 'config.xml' 'defaults.xml' 'donottranslate.xml' 'donottranslate_config.xml'
                    'aliases.xml' 'crop_colors.xml' 'dslv_attrs.xml' 'animation_constants.xml' 'donottranslate-cldr.xml' 'donottranslate-maps.xml' 'donottranslate-names.xml' 'donottranslate_material.xml'
-                   'donottranslate-search_engines.xml' 'ex_arrays.xml' 'ex_strings.xml' 'ex_symbols.xml' 'fractions.xml' 'ids.xml' 'integers.xml' 'internal.xml' 'keys.xml' 'lland_config.xml' 'lland_strings.xml' 'plurals.xml'
+                   'donottranslate-search_engines.xml' 'ex_arrays.xml' 'ex_strings.xml' 'ex_symbols.xml' 'ex_colors.xml' 'aosp_strings.xml' 'aosp_arrays.xml' 'aosp_colors.xml' 'projekt_colors.xml' 'projekt_strings.xml' 'fractions.xml' 'ids.xml' 'integers.xml' 'internal.xml' 'keys.xml' 'lland_config.xml' 'lland_strings.xml' 'plurals.xml'
                    'public.xml' 'strings.xml' 'symbols.xml' 'vpi_attrs.xml' 'vpi_defaults.xml' 'cm_arrays.xml' 'cm_plurals.xml' 'cm_strings.xml' 'custom_strings.xml' 'custom_arrays.xml' 'vpi__defaults.xml' 'vpi__attrs.xml'
                    'nontranslatables.xml' 'accountprovider.xml' 'constants.xml' 'codeaurora_strings.xml' 'filtershow_ids.xml' 'filtershow_strings.xml' 'filtershow_values.xml' 'filtershow_values_attrs.xml')
 
@@ -102,7 +102,7 @@ else
   exit 1
 fi
 echo "Cloning Theme Resources repo"
-git clone https://github.com/ishubhamsingh/AEX-Scripts.git -b 7.1.1
+git clone https://github.com/AospExtended/AEX-Scripts.git -b 7.x
 echo "Removing unneeded files"
 cd frameworks/base
 delete_useless ${frameworks[@]}
@@ -160,7 +160,7 @@ echo "Copying all files to $WORKING_DIR/AEX-Scripts/themes-resources"
 #cp -r $WORKING_DIR/packages/apps/DU-Updater $WORKING_DIR/AEX-Scripts/themes-resources/packages/apps/
 copy_all ${theme_packages[@]}
 cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/AEX-Scripts/themes-resources/frameworks
-cd /root/aex/AEX-Scripts/themes-resources
+cd /home/shubham/aex/AEX-Scripts/themes-resources
 cd $WORKING_DIR/AEX-Scripts/themes-resources/packages/apps/Dialer/InCallUI
 delete_useless ${res[@]}
 cd $WORKING_DIR/AEX-Scripts/themes-resources
