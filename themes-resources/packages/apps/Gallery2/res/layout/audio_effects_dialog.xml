@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-Copyright (c) 2013, 2016, The Linux Foundation. All rights reserved.
+Copyright (c) 2013, The Linux Foundation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -40,58 +40,33 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp">
+        android:paddingBottom="10dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/aEffectsPanel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="10dp"
             android:gravity="center_vertical">
 
-            <RelativeLayout
+            <com.android.gallery3d.ui.Knob
+                android:id="@+id/bBStrengthKnob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
-                <com.android.gallery3d.ui.Knob
-                    android:id="@+id/bBStrengthKnob"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    custom:foreground="@drawable/knob"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@id/bBStrengthKnob"
-                    android:layout_marginTop="12dp"
-                    android:textColor="@android:color/black"
-                    android:text="@string/bass_boost_strength"/>
-            </RelativeLayout>
+                android:layout_weight="1"
+                custom:label="@string/bass_boost_strength"
+                custom:foreground="@drawable/knob" />
 
-            <RelativeLayout
+            <com.android.gallery3d.ui.Knob
+                android:id="@+id/vIStrengthKnob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_alignParentRight="true"
-                android:layout_weight="1">
-                <com.android.gallery3d.ui.Knob
-                    android:id="@+id/vIStrengthKnob"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    custom:foreground="@drawable/knob"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/vIStrengthKnob"
-                    android:layout_marginTop="12dp"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@android:color/black"
-                    android:text="@string/virtualizer_strength"/>
-            </RelativeLayout>
-        </RelativeLayout>
+                android:layout_weight="1"
+                custom:label="@string/virtualizer_strength"
+                custom:foreground="@drawable/knob" />
+
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

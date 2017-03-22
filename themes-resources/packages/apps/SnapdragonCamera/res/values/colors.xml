@@ -48,7 +48,7 @@
 
     <color name="recording_time_elapsed_text">@color/white</color>
     <color name="recording_time_remaining_text">@color/red</color>
-    <color name="on_viewfinder_label_background_color">@color/black</color>
+    <color name="on_viewfinder_label_background_color">#401b1b1b</color>
     <color name="review_control_pressed_color">@color/blue</color>
     <color name="review_control_pressed_fan_color">@color/blue</color>
     <color name="review_background">@color/black</color>
@@ -70,15 +70,33 @@
     <color name="face_detect_fail">@color/red</color>
     <color name="focus_color">#ffffffff</color>
     <color name="gray">@color/grey</color>
+    <color name="camera_controls_bg_opaque">#1b1b1b</color>
+    <color name="camera_controls_bg_translucent">#401b1b1b</color>
+    <color name="camera_controls_bg_transparent">#101b1b1b</color>
+    <color name="camera_controls_ripple">#ff4285f4</color>
 
     <color name="setting_list_selected">#40fafafa</color>
     <color name="setting_list_pressed">#60fafafa</color>
     <color name="list_divider_color">#e0212121</color>
     <color name="scene_item_selected">@color/setting_list_selected</color>
 
-    <color name="camera_control_bg_opaque">@color/black</color>
-    <color name="camera_control_bg_transparent">#40212121</color>
-    <color name="histogram_grid_lines">#c0bdbdbd</color>
-    <color name="histogram_bars">#e0ffffff</color>
+    <color name="refocus_indicator_1">#a0ffffff</color>
+    <color name="refocus_indicator_2">#ff29b6f6</color>
+
+    <!-- Help menu text color -->
+    <color name="help_menu_scene_mode_1">#ffffff</color>
+    <color name="help_menu_scene_mode_2">#00ff00</color>
+    <color name="help_menu_scene_mode_3">#ffffff</color>
+    <color name="help_menu_color_filter_1">#ffffff</color>
+    <color name="help_menu_color_filter_2">#00ff00</color>
+    <color name="help_menu_color_filter_3">#ffffff</color>
+    <color name="help_menu_color_filter_4">#ffffff</color>
+    <color name="help_menu_beautify_1">#ffffff</color>
+    <color name="help_menu_beautify_2">#ffffff</color>
+    <color name="help_menu_beautify_3">#00ff00</color>
+    <color name="help_menu_switcher_1">#00ff00</color>
+    <color name="help_menu_switcher_2">#ffffff</color>
+    <color name="help_menu_switcher_3">#ffffff</color>
+
     <color name="toast_text">@color/white</color>
 </resources>

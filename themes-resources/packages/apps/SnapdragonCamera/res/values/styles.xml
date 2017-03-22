@@ -86,7 +86,7 @@
         <item name="android:gravity">left|center_vertical</item>
         <item name="android:singleLine">true</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
     <style name="SettingItemTitle">
@@ -121,16 +121,16 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:layout_width">3000dp</item>
         <item name="android:layout_height">@dimen/setting_row_height</item>
-        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingLeft">4dp</item>
         <item name="android:paddingRight">@dimen/setting_item_list_margin</item>
         <item name="android:background">@drawable/setting_list_item_bg</item>
     </style>
     <style name="OnViewfinderLabel">
+        <item name="android:layout_gravity">left</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
-        <item name="android:layout_marginTop">38dp</item>
         <item name="android:paddingLeft">15dp</item>
         <item name="android:paddingRight">15dp</item>
         <item name="android:paddingTop">3dp</item>
@@ -247,6 +247,18 @@
         <item name="android:layout_width">@dimen/switcher_size</item>
         <item name="android:layout_height">@dimen/switcher_size</item>
         <item name="android:background">@drawable/bg_pressed_exit_fading</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+    <style name="MenuButton">
+        <item name="android:layout_width">@dimen/menu_outer_size</item>
+        <item name="android:layout_height">@dimen/menu_outer_size</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+    <style name="MuteButton">
+        <item name="android:layout_width">@dimen/mute_outer_size</item>
+        <item name="android:layout_height">@dimen/mute_outer_size</item>
+        <item name="android:scaleType">center</item>
     </style>
     <style name="ToggleButton">
         <item name="android:layout_width">@dimen/toggle_outer_size</item>

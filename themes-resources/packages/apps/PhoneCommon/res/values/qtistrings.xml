@@ -43,7 +43,7 @@
     <!-- Text for CallFailCause.OPERATOR_DETERMINED_BARRING = 8 -->
     <string name="callFailed_operator_determined_barring">Operator determined barring</string>
     <!-- Text for CallFailCause.NORMAL_CLEARING = 16 -->
-    <string name="callFailed_normal">Normall call clearing</string>
+    <string name="callFailed_normal">Normal call clearing</string>
     <!-- Text for CallFailCause.CALL_FAIL_NO_USER_RESPONDING = 18 -->
     <string name="callFailed_no_user_responding">No user responding</string>
     <!-- Text for CallFailCause.CALL_FAIL_NO_ANSWER_FROM_USER = 19 -->

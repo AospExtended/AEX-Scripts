@@ -1,0 +1,39 @@
+<!--
+     Copyright (C) 2017 ParaSHIT
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+            http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="@color/icon_color_one_handed_mode"
+        android:pathData="M6.0415 6.8368c0.25547-0.043254 0.07689 1.4095 0.06843 1.6094-0.06544
+1.0608-0.18021 2.6193-0.2525 3.4618-0.0642 0.76125-0.09488 1.7211 0.84244 2.6618
+0.96073-0.76494 1.8238-1.4196 2.6194-2.3669 0.78711-1.0319 1.4253-1.5097
+1.8406-1.1162 0.41529 0.39347 0.3898 0.60249-0.80233 2.2371-0.78154
+1.0716-1.2725 2.0269-1.6684 3.2447-0.30855 0.94916-0.55175 1.8375-0.82121
+2.1214-0.26945 0.28398-0.56418 1.0326-0.84716 1.5457-1.1294 0.25909-2.5978
+0.18245-3.6223 0.04484 0.26078-0.65677 0.63855-1.226
+0.97695-1.8501l-0.41532-2.5297c-0.41616-2.5279-0.41705-2.529-0.01416-3.417
+0.22177-0.48876 0.40583-1.0896 0.40824-1.3333 0.0058-0.57929 1.1344-3.6335
+1.5504-4.1957 0.05605-0.075272 0.10038-0.11171
+0.13687-0.11799zm9.4845-0.623v11.572h-4.67l-0.01889-1.9987s0.56091-0.8203
+1.1351-1.6165c1.2316-1.7077 1.1815-2.8284
+0.93684-3.5184-0.24465-0.69002-1.0164-1.1811-2.0861-1.0997-0.0029-0.83862
+0.03303-3.3391
+0.03303-3.3391zm5.075-2.6406v16.854h-11.581l0.82829-1.6259h9.3297v-13.805h-10.149l-0.05663
+5.2788s-0.4709 0.44916-1.1634 1.0997v-7.8018z" />
+</vector>

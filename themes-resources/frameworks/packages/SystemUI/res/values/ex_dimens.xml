@@ -37,11 +37,34 @@
     <dimen name="floating_action_button_height">54dp</dimen>
     <dimen name="floating_action_button_width">54dp</dimen>
     <dimen name="floating_action_button_translation_z">12dp</dimen>
-    <dimen name="floating_action_button_margin_side">32dp</dimen>
-    <dimen name="floating_action_button_margin_bottom">46dp</dimen>
+    <dimen name="floating_action_button_margin_side">54dp</dimen>
+    <dimen name="floating_action_button_margin_bottom">54dp</dimen>
 
     <!-- QS headers -->
     <dimen name="qs_panel_top_offset_normal">80dp</dimen>
     <dimen name="qs_panel_top_offset_header">110dp</dimen>
 
+    <!-- Qs visibility -->
+    <dimen name="qs_tile_height_wo_label">48dp</dimen>
+
+    <!-- QS scroller -->
+    <dimen name="qs_scroller_margin">12dp</dimen>
+    <dimen name="qs_scroller_min_tile_gap">4dp</dimen>
+
+    <!-- Status bar notification ticker -->
+    <dimen name="ticker_start_padding">6dp</dimen>
+    <dimen name="ticker_icon_end_margin">4dp</dimen>
+    <dimen name="ticker_text_top_padding">2dp</dimen>
+    <dimen name="ticker_text_end_padding">10dp</dimen>
+
+    <!-- Slim recent -->
+    <dimen name="recent_width">230dp</dimen>
+    <dimen name="slim_recents_elevation">20dp</dimen>
+    <dimen name="recent_app_icon_size">48dp</dimen>
+    <dimen name="recent_favorite_icon_size">18dp</dimen>
+    <dimen name="recent_thumbnail_width">198dp</dimen>
+    <dimen name="recent_thumbnail_height">140dp</dimen>
+    <dimen name="recent_header_width">120dp</dimen>
+    <dimen name="recent_text_size">17dp</dimen>
+    <dimen name="recent_thumbnail_bottom_padding">3dp</dimen>
 </resources>

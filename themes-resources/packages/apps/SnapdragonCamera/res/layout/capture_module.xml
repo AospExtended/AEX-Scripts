@@ -27,22 +27,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center">
-
+    <include layout="@layout/selfie_flash_view" />
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical|center_horizontal">
-
         <com.android.camera.ui.AutoFitSurfaceView
             android:id="@+id/mdp_preview_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center" />
-
         <com.android.camera.ui.AutoFitSurfaceView
-            android:id="@+id/mdp_preview_content2"
             android:layout_width="300dp"
-            android:layout_height="300dp" />
+            android:layout_height="300dp"
+	    android:id="@+id/mdp_preview_content_mono"
+            android:visibility="gone"/>
     </FrameLayout>
 
     <View
@@ -51,59 +50,33 @@
         android:layout_height="match_parent"
         android:background="@android:color/black" />
 
-    <FrameLayout
+    <com.android.camera.ui.focus.FocusRingView
+        android:id="@+id/focus_ring"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" />
 
-        <com.android.camera.ui.focus.FocusRingView
-            android:id="@+id/focus_ring"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
-
-    <FrameLayout
+    <com.android.camera.ui.CaptureAnimationOverlay
+        android:id="@+id/capture_overlay"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="gone" />
 
-        <com.android.camera.ui.Camera2FaceView
-            android:id="@+id/face_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone"/>
-    </FrameLayout>
+    <com.android.camera.ui.Camera2FaceView
+        android:id="@+id/face_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
 
     <com.android.camera.ui.RenderOverlay
         android:id="@+id/render_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.android.camera.ui.RotateLayout
-        android:id="@+id/recording_time_rect"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <include layout="@layout/recording_time"
+        android:id="@+id/recording_time" />
 
-        <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+    <include layout="@layout/camera_controls"
+        android:layout_gravity="center"
+        style="@style/CameraControls"/>
 
-            <com.android.camera.PauseButton
-                android:id="@+id/video_pause"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:padding="23dp"
-                android:src="@drawable/btn_pause_recording"/>
-
-            <include
-                android:id="@+id/labels"
-                layout="@layout/viewfinder_labels_video"/>
-        </LinearLayout>
-    </com.android.camera.ui.RotateLayout>
-
-    <include
-        style="@style/CameraControls"
-        layout="@layout/camera_controls"
-        android:layout_gravity="center" />
 </merge>
