@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WORKING_DIR=/home/shubham/aex
+WORKING_DIR=/home/shubham/aex4
 
 function delete_useless () {
   declare -a array=($@)
@@ -160,7 +160,7 @@ echo "Copying all files to $WORKING_DIR/AEX-Scripts/themes-resources"
 #cp -r $WORKING_DIR/packages/apps/DU-Updater $WORKING_DIR/AEX-Scripts/themes-resources/packages/apps/
 copy_all ${theme_packages[@]}
 cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/AEX-Scripts/themes-resources/frameworks
-cd /home/shubham/aex/AEX-Scripts/themes-resources
+cd /home/shubham/aex4/AEX-Scripts/themes-resources
 cd $WORKING_DIR/AEX-Scripts/themes-resources/packages/apps/Dialer/InCallUI
 delete_useless ${res[@]}
 cd $WORKING_DIR/AEX-Scripts/themes-resources
