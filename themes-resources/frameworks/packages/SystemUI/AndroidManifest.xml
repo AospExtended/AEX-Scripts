@@ -30,6 +30,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.DUMP" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
@@ -258,6 +259,24 @@
             </intent-filter>
         </service>
 
+        <!-- started from PhoneWindowManager
+             TODO: Should have an android:permission attribute -->
+        <service android:name=".aex.onthego.OnTheGoService"
+            android:process=":onthego"
+            android:exported="false" />
+
+        <!-- started from PhoneWindowManager
+             TODO: Should have an android:permission attribute -->
+
+        <service android:name=".CPUInfoService"
+                android:exported="true" />
+
+        <receiver android:name=".BootReceiver" androidprv:systemUserOnly="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
         <service android:name=".ImageWallpaper"
                 android:permission="android.permission.BIND_WALLPAPER"
                 android:exported="true" />
@@ -358,6 +377,13 @@
             android:process=":cmsettings"
             android:exported="true">
         </activity>
+
+        <!-- Callback for editing screenshot notification -->
+        <activity android:name=".screenshot.GlobalScreenshot$EditScreenshotActivity"
+                  android:process=":screenshot"
+                  android:exported="false"
+                  android:taskAffinity=""
+                  android:excludeFromRecents="true" />
 
         <!-- started from UsbDeviceSettingsManager -->
         <activity android:name=".usb.UsbConfirmActivity"
@@ -573,5 +599,10 @@
                 <action android:name="android.intent.action.SHOW_KEYBOARD_SHORTCUTS" />
             </intent-filter>
         </receiver>
+
+        <service
+            android:name=".screenshot.ScreenshotEditor"
+            android:theme="@style/ScreenshotEditorStyle" />
+
     </application>
 </manifest>
