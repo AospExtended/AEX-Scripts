@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WORKING_DIR=/home/shubham/aex4
+WORKING_DIR=/home/shubham/aex2
 
 function delete_useless () {
   declare -a array=($@)
@@ -82,8 +82,8 @@ declare -a values=('all_search_engines.xml' 'appmsg_colors.xml' 'arrays.xml' 'at
 
 declare -a core=('java' 'jni' 'tests' 'src')
 
-declare -a theme_packages=('Calculator' 'Calendar'  'Camera2' 'SnapdragonCamera' 'Contacts' 'ContactsCommon' 'DeskClock' 'Dialer' 'Email' 'Gallery2'
-                           'Messaging' 'OmniStyle' 'PhoneCommon' 'Settings' 'Stk' 'Extensions' 'AEXOTA' 'DUI')
+declare -a theme_packages=('ExactCalculator' 'Calendar'  'Camera2' 'SnapdragonCamera' 'Contacts' 'ContactsCommon' 'DeskClock' 'Dialer' 'Email' 'FMRadio' 'Gallery2'
+                           'Messaging' 'MusicFX' 'OmniStyle' 'PhoneCommon' 'PackageInstaller' 'Settings' 'Stk' 'Extensions' 'AEXOTA' 'DUI')
 
 declare -a extra=('java' '.idea' 'gradle' '.gitignore' 'build.gradle' 'gradlew' 'gradlew.bat' 'local.properties' 'proguard-rules.pro' 'proguard.flags')
 
@@ -94,7 +94,7 @@ cd .repo
 #rm -rf local_manifests
 cd ..
 echo "Repo Syncing........."
-repo sync -c --force-sync >> /dev/null
+repo sync -c -j10 --force-sync >> /dev/null
 if [ $? -eq 0 ]; then
   echo "Repo Sync success"
 else
@@ -160,7 +160,7 @@ echo "Copying all files to $WORKING_DIR/AEX-Scripts/themes-resources"
 #cp -r $WORKING_DIR/packages/apps/DU-Updater $WORKING_DIR/AEX-Scripts/themes-resources/packages/apps/
 copy_all ${theme_packages[@]}
 cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/AEX-Scripts/themes-resources/frameworks
-cd /home/shubham/aex4/AEX-Scripts/themes-resources
+cd /home/shubham/aex2/AEX-Scripts/themes-resources
 cd $WORKING_DIR/AEX-Scripts/themes-resources/packages/apps/Dialer/InCallUI
 delete_useless ${res[@]}
 cd $WORKING_DIR/AEX-Scripts/themes-resources
