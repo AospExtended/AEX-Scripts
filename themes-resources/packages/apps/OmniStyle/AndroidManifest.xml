@@ -41,7 +41,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".weather_color"
-            android:label="LockClock (color)" >
+            android:label="@string/weather_color" >
             <intent-filter>
                 <action android:name="org.omnirom.WeatherIconPack" />
 
@@ -51,7 +51,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <activity
             android:name=".nature"
-            android:label="Nature" >
+            android:label="@string/header_nature" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -61,7 +61,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <activity
             android:name=".poly"
-            android:label="Poly" >
+            android:label="@string/header_poly" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -71,7 +71,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <activity
             android:name=".naturerandom"
-            android:label="Nature (random)" >
+            android:label="@string/header_naturerandom" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -81,7 +81,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <activity
             android:name=".wavvy"
-            android:label="Wavvy by Travis Hall" >
+            android:label="@string/header_wavvy" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -102,6 +102,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <activity
             android:name=".aex"
             android:label="@string/header_pack_label2" >
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+        <activity
+            android:name=".beextended"
+            android:label="@string/header_pack_label3" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 

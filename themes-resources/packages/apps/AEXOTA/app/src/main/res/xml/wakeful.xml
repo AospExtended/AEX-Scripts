@@ -1,3 +1,0 @@
-<WakefulIntentService
-    listener="com.aospextended.ota.scheduler.OTAListener"
-    />

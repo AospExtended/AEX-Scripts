@@ -19,6 +19,6 @@
 
     <target
         android:name="battery_level"
-        android:animation="@anim/battery_circle" />
+        android:animation="@anim/big_battery_circle" />
 
 </animated-vector>
